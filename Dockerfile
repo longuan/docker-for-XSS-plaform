@@ -37,14 +37,19 @@ RUN a2enmod rewrite
 RUN rm /etc/mysql/my.cnf
 COPY my.cnf /etc/mysql/my.cnf
 
+# 
+RUN rm /etc/apache2/apa2che.conf
+COPY apache2.conf /etc/apache2/apache2.conf
+
+# remove default apache index.html
+RUN rm /var/www/html/index.html
+
 # copy xss/ to /var/www/html
 COPY XSS /var/www/html
 
 # chown
 RUN chown -R www-data:www-data /var/www/html
 
-
-ADD phpinfo.php /var/www/html/
 ADD supervisord.conf /etc/
 EXPOSE 22 80 443
 
