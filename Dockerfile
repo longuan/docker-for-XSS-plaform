@@ -41,7 +41,7 @@ COPY my.cnf /etc/mysql/my.cnf
 COPY XSS /var/www/html
 
 # chown
-RUN chown -R apache:apache /var/www/html
+RUN chown -R www-data:www-data /var/www/html
 
 
 ADD phpinfo.php /var/www/html/
