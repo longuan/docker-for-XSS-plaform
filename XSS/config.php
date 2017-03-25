@@ -19,7 +19,7 @@ $config['register']		='invite';				//normal,正常;invite,只允许邀请注册;
 $config['mailauth']		=false;					//注册时是否邮箱验证
 
 /* url配置 */
-$config['urlroot']		='http://localhost:8008';		//网站 URL 路径
+$config['urlroot']		='http://ip:port';		//网站 URL 路径
 $config['urlrewrite']	=true;					//URL Rewrite
 
 /* 存储配置 */
