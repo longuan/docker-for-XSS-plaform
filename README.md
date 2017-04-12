@@ -17,7 +17,7 @@
 > docker build -t xssplatform/solei1:1.0 .
 
 - 启动docker (自己选择映射的端口代替port,与前面一致)
-> docker run -d -p port:80 xssplatform/solei1
+> docker run -d -p port:80 xssplatform/solei1:1.0
 
 - 首先访问http://ip:port/setup.php，进行数据库初始化
 > http://ip:port/setup.php
