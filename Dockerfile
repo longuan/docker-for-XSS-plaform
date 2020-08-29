@@ -38,7 +38,7 @@ RUN rm /etc/mysql/my.cnf
 COPY my.cnf /etc/mysql/my.cnf
 
 # 
-RUN rm /etc/apache2/apa2che.conf
+RUN rm /etc/apache2/apache2.conf
 COPY apache2.conf /etc/apache2/apache2.conf
 
 # remove default apache index.html
